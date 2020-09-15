@@ -12,7 +12,7 @@
         </header>
         
         <main>
-            <div>
+            <section>
                 <hr>
                 <form>
                     <fieldset>
@@ -37,20 +37,34 @@
                         </label>
     
                         <label>Вік:<br>
-                            <input type="number" name="age" min="1" max="99" value="18"><br>
+                            <input type="number" name="age" min="16" max="99" ><br>
+                        </label>
+
+                        <label>Оберіть все, що стосується вас:<br>
+                            <input type="checkbox" name="preferences">Полюбляю сучасне мистецтво<br>
+                            <input type="checkbox" name="preferences">Часто відвідую музеї<br>
+                            <input type="checkbox" name="preferences">Прагну повязати(вже повязав своє життя з мистецтвом)<br>
+                            <input type="checkbox" name="preferences">Прагну займатись/займаюсь стріт-артом в некомерційних цілях<br>
+                        </label>
+                        
+                        <label>Що саме вас зацікавило в нашому сайті:<br>
+                            <input type="radio" name="reason">Прагну дізнатись про стріт-арт в Чернівцях<br>
+                            <input type="radio" name="reason">Прагну прийняти участь у вашому проекті<br>
+                            <input type="radio" name="reason">Хочу першим дізнаватись про нові мурали<br>
                         </label>
     
                         <textarea name="comment" placeholder="Розкажіть про себе"></textarea>
                     </fieldset>
 
                     <input type="submit" name="submit" value="Зареєструватись">
+                    <input type="reset" name="reset" value="Скинути">
                 </form>
-            </div>
+            </section>
 
-            <div>
+            <section>
                 <hr>
                 <a href="index.html">Назад до статті</a>
-            </div>
+            </section>
         </main>
 
         <footer>
