@@ -17,14 +17,24 @@
                 <form>
                     <fieldset>
                         <legend>Обов'язкові поля</legend>
-                        Логін: <input type="text" name="login" required=""/><br><br>
+                        <p>
+                            Логін: <input type="text" name="login" required="" autofocus/><br><br>
 
-                        Пароль: <input type="password" name="password" pattern="^([a-zA-Z\d]{8,})$" 
-                        title="Маленькі та великі латинські літери, цифри. Мінімум 8 символів" required=""/><br><br>
+                            Пароль: <input type="password" name="password" pattern="^([a-zA-Z0-9\d]{8,})$" 
+                            title="Маленькі та великі латинські літери, цифри. Мінімум 8 символів" required=""/><br><br>
 
-                        Email: <input type="text" name="email" required=""><br><br>
+                            Email: <input type="email" name="email" required=""><br><br>
+                            
+                            Оберіть:<br>
+                            <select multiple size="5" type="text">
+                                <option disabled>Виберіть одне чи декілька значень</option>
+                                <option >Перше</option>
+                                <option >Друге</option>
+                                <option >Третє</option>
+                            </select>
+                        </p>
                     </fieldset>
-                    <br>
+                    <p></p>
 
                     <fieldset>
                         <legend>Особиста інформація</legend>
@@ -49,15 +59,22 @@
                         
                         <label>Що саме вас зацікавило в нашому сайті:<br>
                             <input type="radio" name="reason">Прагну дізнатись про стріт-арт в Чернівцях<br>
-                            <input type="radio" name="reason">Прагну прийняти участь у вашому проекті<br>
+                            <input type="radio" name="reason">Прагну взяти участь у вашому проекті<br>
                             <input type="radio" name="reason">Хочу першим дізнаватись про нові мурали<br>
+                        </label>
+
+                        <label>Оберіть ваш віковий інтервал:<br>
+                            <input type="radio" name="age">14-18<br>
+                            <input type="radio" name="age">19-30<br>
+                            <input type="radio" name="age">30-50<br>
                         </label>
     
                         <textarea name="comment" placeholder="Розкажіть про себе"></textarea>
                     </fieldset>
 
-                    <input type="submit" name="submit" value="Зареєструватись">
-                    <input type="reset" name="reset" value="Скинути">
+                    <button type="submit" name="submit">Зареєструватись</button>  
+                    <button type="reset" name="reset">Скинути</button>
+                    <button type="button" id="add">Додати</button>
                 </form>
             </section>
 
