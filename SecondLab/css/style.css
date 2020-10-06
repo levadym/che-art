@@ -1,0 +1,246 @@
+body {
+    background-color: #F2F2F2;
+    padding: 0% 1% 1% 1%;
+    margin: 0% 1% 0% 0%;
+    font-size: 16px;
+}
+
+footer {
+    display: block;
+    float: right;
+    width: 15%;
+}
+
+.registration-link {
+    display: block;
+    padding: 5%;
+    margin-bottom: 5%;
+    width: fit-content;
+    border: 2px solid #43aa5c;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.registration-link:hover {
+    transition: 100ms;
+    color: #F0FFF0;
+    background-color: #2A363B;
+}
+
+.registration-title {
+    font-family: 'Bad Script', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-left: 15%;
+    width: 68%;
+}
+
+nav {
+    box-sizing: border-box;
+    display: block;
+    position: fixed;
+    width: 13%;
+    height: 100vh;
+    margin-left: 0;
+    overflow: auto;
+}
+
+nav > a {
+    display: block;
+    color: #110c11;
+    padding: 7.5%;
+    margin-bottom: 5%;
+    border: 2px solid #43aa5c;
+    border-radius: 8px;
+    font-size: 1.05em;
+}
+
+nav > a:hover {
+    transition: 100ms;
+    color: #F0FFF0;
+    background-color: #2A363B;
+}
+
+main {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 15%;
+    width: 68%;
+}
+
+.title {
+    font-family: 'Bad Script', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-left: 15%;
+    width: 68%;
+}
+
+.section-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.35em;
+    font-weight: 575;
+    margin-bottom: 1%;
+}
+
+section {
+    padding: 1%;
+    margin-bottom: 1%;
+    margin-left: 0%;
+    height: 40vh;
+    border: 2px solid #43aa5c;
+    border-radius: 10px;
+    background-image: linear-gradient(#43aa5c20, #F0FFF025);
+    overflow: auto;
+}
+
+.scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+section > p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+    height: 70%;
+}
+
+video {
+    height: 70%;
+}
+
+a {
+    text-decoration: none;
+}
+
+blockquote {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+cite {
+    font-weight: 500;
+    text-shadow: 1px 1px #295f37;
+}
+
+i {
+    display: inline-block;
+    margin-bottom: 3%;
+    width: 100%;
+    color: #000000;
+}
+
+abbr {
+    text-decoration: #43aa5c;
+}
+
+a {
+    text-decoration: none;
+    color: #295f37;
+}
+
+a:hover {
+    color: #388d4d;
+}
+
+.fa-arrow-circle-up {
+    color: #43aa5c;
+}
+
+aside {
+    position: fixed;
+    top: 85%;
+    left: 85%;
+    height: auto;
+    width: auto;
+    z-index: 1;
+}
+
+form {
+    padding: 1%;
+    margin-bottom: 1%;
+    margin-left: 0%;
+    border: 2px solid #43aa5c;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.not-required {
+    color: #00000095;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number] {
+    display: block;
+    margin-bottom: 1%;
+    outline: none;
+    transition: 600ms;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus {
+    border: 2px solid #43aa5c;
+}
+
+button[type=submit] {
+    width: 20%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 1.2em;
+    padding: 0.8%;
+    outline: none;
+    color: #F2F2F2;
+    background-color: #43aa5c;
+    border: 1px solid #43aa5c;
+}
+
+button[type=submit]:focus {
+    background-color: #3a9451;
+}
+
+button[type=reset] {
+    width: 20%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 1em;
+    padding: 1%;
+    outline: none;
+    color: #F2F2F2;
+    background-color: #ca414199;
+    border: 1px solid #ca414199;
+}
+
+button[type=reset]:focus {
+    background-color: #b1383899;
+}
+
+.checkbox, .radio {
+    display: block;
+    margin-bottom: 1%;
+}
+
+select {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #43aa5c;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    outline: none;
+}
+
+textarea {
+    width: 40%;
+    height: 20%;
+    resize: none;
+    outline: none;
+}
+
+textarea:focus {
+    border: 1px solid #43aa5c;
+}

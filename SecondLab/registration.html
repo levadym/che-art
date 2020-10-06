@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-tofit=no">
+        <link href="favicon.ico" rel="icon" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <title>Реєстрація</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="registration-title">Реєстрація</h1>
+            <nav>
+                <a href="index.html">Назад до статті</a>
+            </nav>
+        </header>
+        
+        <main>
+            <form>
+                <fieldset class="required">
+                    <legend>Обов'язкові поля</legend>
+                    <p>
+                        Логін: <input type="text" name="login" required="" autofocus/>
+
+                        Пароль: <input type="password" name="password" pattern="^([a-zA-Z0-9\d]{8,})$" 
+                        title="Маленькі та великі латинські літери, цифри. Мінімум 8 символів" required=""/>
+
+                        Email: <input type="email" name="email" placeholder="email@address.com" required="">
+                        
+                        Оберіть вашу країну:
+                        <select size="5" type="text">
+                            <option disabled>Виберіть країну</option>
+                            <option>Україна</option>
+                            <option>Росія</option>
+                            <option>Білорусь</option>
+                            <option>Польща</option>
+                            <option>Румунія</option>
+                            <option>Молдова</option>
+                            <option>Угорщина</option>
+                            <option>Словаччина</option>
+                            <option>Інше</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset class="not-required">
+                    <legend>Особиста інформація</legend>
+                    <label>Ім'я:
+                        <input type="text" name="firstname">
+                    </label>
+
+                    <label>Прізвище:
+                        <input type="text" name="lastname">
+                    </label>
+
+                    <label>Вік:
+                        <input type="number" name="age" min="16" max="99" >
+                    </label>
+
+                    <label class="checkbox">Оберіть все, що стосується вас:<br>
+                        <input type="checkbox" name="preferences">Полюбляю сучасне мистецтво<br>
+                        <input type="checkbox" name="preferences">Часто відвідую музеї<br>
+                        <input type="checkbox" name="preferences">Прагну повязати(вже повязав своє життя з мистецтвом)<br>
+                        <input type="checkbox" name="preferences">Прагну займатись/займаюсь стріт-артом в некомерційних цілях<br>
+                    </label>
+                    
+                    <label class="radio">Що саме вас зацікавило в нашому сайті:<br>
+                        <input type="radio" name="reason">Прагну дізнатись про стріт-арт в Чернівцях<br>
+                        <input type="radio" name="reason">Прагну взяти участь у вашому проекті<br>
+                        <input type="radio" name="reason">Хочу першим дізнаватись про нові мурали<br>
+                    </label>
+
+                    <textarea name="comment" placeholder="Розкажіть про себе"></textarea>
+                </fieldset>
+
+                <button type="submit" name="submit">Зареєструватись</button>  
+                <button type="reset" name="reset">Скинути</button>
+            </form>
+        </main>
+
+        <footer>
+            <div>
+                <b>Tsyhanash Vadym</b>
+                <a href="https://www.instagram.com/le_vadym/" target="_blank">
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div>
+                All rights are reserved &copy; Tsyhanash
+            </div>
+        </footer>
+    </body>
+</html>
